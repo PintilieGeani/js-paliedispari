@@ -36,3 +36,47 @@ if(result === true){
     console.log("Non Palindromo")
 }
 
+console.log("- - - - - - - - - - - -")
+
+
+// Pari e Dispari
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Dichiariamo chi ha vinto.
+
+// Risoluzione:
+// Raccolta dati:
+const userAnswareProm = "pari"
+const userAnsware = userAnswareProm.toLowerCase()
+const userNumberStr = 3
+const userNumber = parseInt(userNumberStr)
+const CompNumber =  rollDice()
+const somma = userNumber + CompNumber
+const risultato = whoWin(somma)
+
+// Risoluzione logica
+function rollDice(){
+    return Math.floor(Math.random() * 5) + 1
+}
+console.log(CompNumber)
+
+function whoWin(laSomma){
+    if(laSomma % 2 === 0){
+        numero = "pari"
+    }else{
+        numero = "dispari"
+    }
+    if(numero === userAnsware){
+        vincitore = "Vince il giocatore"
+    }else{
+        vincitore = "Vince il Computer"
+    }
+    return vincitore
+}
+
+// Output
+
+console.log(risultato)
+
