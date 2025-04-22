@@ -6,7 +6,7 @@ NON USARE SPLIT E REVERSE!!! TUTTO CON CICLO FOR
 Risoluzione:
 
 Raccolta dati:
-- Creiamo un array con la parola da controllare
+- Creiamo una variabile con la parola da controllare
 - Creiamo un array vuoto dove andiamo ad inserire la parola da controllare al contrario con ciclo for
 - Creiamo una variabile chiamata "palindromo" a cui assegnamo il valore "false" che useremmo per il nostro output
 
@@ -19,3 +19,4 @@ Output:
 } else{
     console.log("Non Palindromo)
 }
+
